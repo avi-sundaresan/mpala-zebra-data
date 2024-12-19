@@ -1,1 +1,1 @@
-# mpala-zebras
+# mpala-zebra-data
