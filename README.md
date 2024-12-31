@@ -1,6 +1,6 @@
 # Grevy's Zebra Camera Trap ID Dataset
 
-This repository contains the filtered and labeled camera trap data for the paper **"Adapting the re-ID challenge for static sensors"**. 
+This repository contains the filtered and labeled camera trap data for the paper **"Adapting the re-ID challenge for static sensors"**. Due to the sensitivity of the data, GPS information has been obfuscated. 
 
 ## Data Description
 
