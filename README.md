@@ -44,7 +44,7 @@ docker run \
  --name wbia.ggr \
  -v $(pwd)/db:/data/db \
  -v $(pwd)/cache:/cache \
- -v /data/mpala_zebras/cropped_filtered_zebras:/data/import \
+ -v /PATH/TO/YOUR/DATA:/data/import \
  --env-file $(pwd)/wbia.env \
  --restart unless-stopped \
  wildme/wbia:latest
@@ -55,7 +55,7 @@ docker run \
 docker logs --follow wbia.ggr
 ```
 
-### initiate iPython embed interactive session inside Docker container
+### Initiate IPython embed interactive session inside Docker container
 ```
 <tmux>$ docker exec -it wbia.ggr bash
 ```
@@ -64,4 +64,5 @@ docker logs --follow wbia.ggr
 <container>$ embed
 ```
 
+Now you can execute the contents of the scripts in /scripts in the IPython environment. 
 
