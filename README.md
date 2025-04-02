@@ -18,18 +18,13 @@ This repo contains setup instructions and example scripts to run zebra detection
 
 ## Quickstart
 
-```
-# Install dependencies
-sudo apt install wget tmux
-```
-
 ### Set up working directory
 ```
 mkdir -p ~/wbia
 cd ~/wbia
 ```
 
-### Copy images into ~/wbia/import/db. 
+Copy images into $(pwd)/wbia/import/. 
 
 ### Create Docker env file
 ```
@@ -61,10 +56,6 @@ docker logs --follow wbia.ggr
 ```
 
 ### initiate iPython embed interactive session inside Docker container
-```
-tmux new-session -s wbia
-​```
-
 ```
 <tmux>$ docker exec -it wbia.ggr bash
 ```
